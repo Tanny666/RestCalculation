@@ -11,7 +11,7 @@ class RestCalculationServiceTest {
             "3, 10000, 3000, 20000",
             "2, 100000, 60000, 150000"
     })
-    public void testRestCalculationService( int expected, int income, int expenses, int threshold) {
+    public void testRestCalculationService(int expected, int income, int expenses, int threshold) {
         RestCalculationService service = new RestCalculationService();
         int actual = service.calculate(income, expenses, threshold);
         assertEquals(expected, actual);
